@@ -174,6 +174,73 @@
         			</Parameter>
         		</Visibility>
         	</Component>
+		
+		<!--
+		****************************************************************************************** -->
+		<!--        - OUTPUTS Z:B21_TE_MS                                -->
+		<!--
+		****************************************************************************************** -->
+		<Component ID="B21_TOTAL_ENERGY_VARIO_CALCULATION">
+			<UseTemplate Name="ASOBO_GT_Update">
+				<FREQUENCY>20</FREQUENCY><!-- Update 20 per second -->
+				<UPDATE_CODE>
+					(Z:B21_VARIO_INIT) 1 == if{
+
+					(E:SIMULATION TIME, seconds) d
+					(Z:B21_VARIO_TIME_PREV_S) - d
+					0 == if{ quit }
+					(&gt;Z:B21_VARIO_TIME_DELTA_S)
+					(&gt;Z:B21_VARIO_TIME_PREV_S)
+
+					(Z:B21_VARIO_TIME_DELTA_S) 1 /
+					0 max 1 min
+					(&gt;Z:B21_VARIO_COMP_SMOOTHING)
+
+					(A:AIRSPEED TRUE, meters per second) sqr (Z:B21_VARIO_SPEED2_PREV_MS) -
+					(&gt;Z:B21_VARIO_SPEED2_DELTA_MS)
+					(Z:B21_VARIO_SPEED2_DELTA_MS) 19.62 / (Z:B21_VARIO_TIME_DELTA_S) /
+					-40 max 40 min
+					(Z:B21_VARIO_COMP_SMOOTHING) * (Z:B21_VARIO_COMP_MS) 1
+					(Z:B21_VARIO_COMP_SMOOTHING)
+					- * +
+					(&gt;Z:B21_VARIO_COMP_MS)
+
+					(Z:B21_VARIO_TIME_DELTA_S) 1 / 0 max 1 min (&gt;Z:B21_VARIO_VSI_SMOOTHING)
+					(A:PLANE ALTITUDE, meters) (Z:B21_VARIO_ALT_PREV_M) - (Z:B21_VARIO_TIME_DELTA_S)
+					/
+					(Z:B21_VARIO_VSI_SMOOTHING) * (Z:B21_VARIO_VSI_MS) 1 (Z:B21_VARIO_VSI_SMOOTHING)
+					- *
+					+
+					-40 max 40 min
+					(&gt;Z:B21_VARIO_VSI_MS)
+
+					(Z:B21_VARIO_VSI_MS) (Z:B21_VARIO_COMP_MS) + d
+					(&gt;Z:B21_VARIO_TE_MS)
+					-8 max 8 min
+					(A:AIRSPEED TRUE, meters per second) 10 &lt; if{
+					0
+					} els{
+					(A:AIRSPEED TRUE, meters per second) 20 &lt; if{
+					(A:AIRSPEED TRUE, meters per second) 10 - 10 / *
+					}
+					}
+					(&gt;Z:B21_TE_MS)
+
+					(A:AIRSPEED TRUE, meters per second) sqr (&gt;Z:B21_VARIO_SPEED2_PREV_MS)
+					(A:PLANE ALTITUDE, meters) (&gt;Z:B21_VARIO_ALT_PREV_M)
+					} els{
+					1 (&gt;Z:B21_VARIO_INIT)
+					0 (&gt;Z:B21_VARIO_COMP_MS)
+					0 (&gt;Z:B21_VARIO_VSI_MS)
+
+					(A:AIRSPEED TRUE, meters per second) sqr (&gt;Z:B21_VARIO_SPEED2_PREV_MS)
+					(A:PLANE ALTITUDE, meters) (&gt;Z:B21_VARIO_ALT_PREV_M)
+					(E:SIMULATION TIME, seconds) (&gt;Z:B21_VARIO_TIME_PREV_S)
+					}
+
+				</UPDATE_CODE>
+			</UseTemplate>
+		</Component>
 	</Behaviors>
 <!-- ########################################## -->
 <!-- START OF CUSTOM CODING COMMON CODES ##### --->
