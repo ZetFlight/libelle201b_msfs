@@ -1,7 +1,7 @@
 <!-- LOD #################################### -->
 <ModelInfo>
 	<LODS>
-		<LOD minSize="0" ModelFile="Aircraft_Int_LOD00.gltf"/>
+		<LOD minSize="0" ModelFile="libelle201b_Int_LOD00.gltf"/>
 	</LODS>
 		
 <!--INCLUDED BEHAIVORS ###################### -->

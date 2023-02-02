@@ -4,7 +4,7 @@
 	<TemporaryOutputDirectory>_PackageInt</TemporaryOutputDirectory>
 	<PublishingGroupTemporaryOutputDirectory>_PublishingGroupInt</PublishingGroupTemporaryOutputDirectory>
 	<Packages>
-		<Package>PackageDefinitions\zetfligt-glasfluegel-libelle201b.xml</Package>
+		<Package>PackageDefinitions\zetflight-glasfluegel-libelle201b.xml</Package>
 	</Packages>
 	<PublishingGroups/>
 </Project>

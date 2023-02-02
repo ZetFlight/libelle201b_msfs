@@ -16,8 +16,8 @@
 			<Flags>
 				<FSXCompatibility>false</FSXCompatibility>
 			</Flags>
-			<AssetDir>PackageDefinitions\zetfligt-glasfluegel-libelle201b\ContentInfo</AssetDir>
-			<OutputDir>ContentInfo\zetfligt-glasfluegel-libelle201b</OutputDir>
+			<AssetDir>PackageDefinitions\zetfligt-glasfluegel-libelle201b\ContentInfo\</AssetDir>
+			<OutputDir>ContentInfo\zetfligt-glasfluegel-libelle201b\</OutputDir>
 		</AssetGroup>
 		<AssetGroup Name="Effects">
 			<Type>Copy</Type>
