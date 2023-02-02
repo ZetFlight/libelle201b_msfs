@@ -1,0 +1,185 @@
+<!-- LOD #################################### -->
+<ModelInfo>
+	<LODS>
+		<LOD minSize="0" ModelFile="Aircraft_Int_LOD00.gltf"/>
+	</LODS>
+		
+<!--INCLUDED BEHAIVORS ###################### -->
+	<Behaviors>
+		<!-- ########################################## -->
+		<Include ModelBehaviorFile="Asobo\Common.xml"/>
+		<Include ModelBehaviorFile="Asobo\Exterior.xml"/>
+        	<Include ModelBehaviorFile="Asobo\Generic\FX.xml"/>
+		<Include ModelBehaviorFile="Asobo\GPS\Aera.xml"/>
+		<Include ModelBehaviorFile="Asobo\GlassCockpit\AS3X_Touch.xml"/>
+		<Include ModelBehaviorFile="Asobo\GlassCockpit\AS1000.xml"/>
+		<!-- ########################################## -->
+
+<!-- ########################################## -->		
+<!-- YOKE RUDDER ANIMATION #################### -->
+<!-- NODE ID 1 IS FOR FORWARD AFT MOVEMENT##### -->
+<!-- NODE ID 2 IS FOR LEFT RIGHT MOVEMENT###### -->
+<!-- ENSURE NODE 2 IS PARENTED UNDER NODE 1#### -->
+<!-- ########################################## -->		
+		<Component ID="HANDLING_Yokes">
+			<UseTemplate Name="ASOBO_HANDLING_Yoke_Template">
+				<NODE_ID>YOKE_FA</NODE_ID>
+				<NODE_ID2>YOKE_LR</NODE_ID2>
+				<CREATE_TWO_NODES/>
+			</UseTemplate>
+		</Component>	
+		<Component ID="HANDLING">
+			<UseTemplate Name="ASOBO_HANDLING_Rudder_Template">
+				<ANIM_NAME>Rudder_PCT</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Lever_Flaps_Template">
+				<NODE_ID>FLAP_HANDLE</NODE_ID>
+				<ANIM_NAME>Flap_Handle_Anim</ANIM_NAME>
+			</UseTemplate>	
+		</Component>		
+<!-- ########################################## -->	
+<!-- COCKPIT CONTROLLERS ###################### -->	
+<!-- ########################################## -->		
+		<Component ID="LANDING_GEAR_ParkingBrake">
+			<UseTemplate Name="ASOBO_LANDING_GEAR_Switch_ParkingBrake_Template">
+				<ANIM_NAME>Parking_Brake_Anim</ANIM_NAME>
+				<NODE_ID>PARKING_BRAKE</NODE_ID>	
+				<ANIM_LAG>100</ANIM_LAG>
+				<TOOLTIPID>TT:COCKPIT.TOOLTIPS.PARKING_BRAKE</TOOLTIPID>
+			</UseTemplate>
+		</Component>		
+		<Component ID="ENGINE_Throttle_Levers">
+			<UseTemplate Name="ASOBO_ENGINE_Lever_Throttle_Template">
+				<ID>1</ID>
+				<NODE_ID>THROTTLE_LEVER</NODE_ID>
+				<ANIM_NAME>Throttle_Lever_Anim</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_ENGINE_Lever_Propeller_Template">
+				<ID>1</ID>
+				<NODE_ID>PROP_LEVER</NODE_ID>
+				<ANIM_NAME>Prop_Lever_Anim</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_FUEL_Lever_Mixture_Template">
+				<ID>1</ID>
+				<NODE_ID>MIXTURE_LEVER</NODE_ID>
+				<ANIM_NAME>Mixture_Lever_Anim</ANIM_NAME>
+			</UseTemplate>
+		</Component>
+		<Component ID="SPOILER_HANDLE" Node="Name_of_MESH_or_PARENT">
+			<UseTemplate Name="ASOBO_HANDLING_Lever_Spoilers_Template">
+				<DRAG_ANIM_NAME>Spoiler_Handle_Anim</DRAG_ANIM_NAME>
+				<ANIM_NAME>Spoiler_Handle_Anim</ANIM_NAME>
+				<NODE_ID>SPOILER_HANDLE</NODE_ID>
+			</UseTemplate>
+		</Component>				
+		<Component ID="LANDINGGEAR">
+			<UseTemplate Name="ASOBO_LANDING_GEAR_Lever_Gear_Template">
+				<NODE_ID>GEAR_HANDLE</NODE_ID>
+				<ANIM_NAME>Gear_Handle_Anim</ANIM_NAME>
+			</UseTemplate>	
+		</Component>		
+<!-- ########################################## -->	
+<!-- LIGHTING CONTROLLERS ##################### -->
+<!-- ########################################## -->
+		<Component ID="LIGHTING">			
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Navigation_Template">		
+				<NODE_ID>NAV_LIGHT_SWITCH</NODE_ID>
+				<ANIM_NAME>Nav_Light</ANIM_NAME>
+			</UseTemplate>				
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Landing_Template">
+				<NODE_ID>LANDING_LIGHT_SWITCH</NODE_ID>
+				<ANIM_NAME>Landing_Light</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Taxi_Template">
+				<NODE_ID>TAXI_LIGHT_SWITCH</NODE_ID>
+				<ANIM_NAME>Taxi_Light</ANIM_NAME>
+			</UseTemplate>						
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Strobe_Template">
+				<NODE_ID>STROBE_LIGHT_SWITCH</NODE_ID>
+				<ANIM_NAME>Strobe_Light</ANIM_NAME>
+			</UseTemplate>					
+			<UseTemplate Name="ASOBO_LIGHTING_Switch_Light_Panel_Template">
+				<NODE_ID>PANEL_LIGHT_SWITCH</NODE_ID>
+				<ANIM_NAME>Panel_Light</ANIM_NAME>
+			</UseTemplate>
+		</Component>
+        	<Component ID="NAV_LIGHT_BLENDER" Node="NAV_LIGHT_PARENT">
+        		<Visibility>
+        			<Parameter>
+        				<Code>
+        			      		(A:LIGHT NAV ON, number) 1 ==
+        				</Code>
+        			</Parameter>
+        		</Visibility>
+        	</Component>
+        	<Component ID="LANDING_LIGHT_BLENDER" Node="LANDING_LIGHT_PARENT">
+        		<Visibility>
+        			<Parameter>
+        				<Code>
+        			      		(A:LIGHT LANDING ON, number) 1 ==
+        				</Code>
+        			</Parameter>
+        		</Visibility>
+        	</Component>
+        	<Component ID="TAXI_LIGHT_BLENDER" Node="TAXI_LIGHT_PARENT">
+        		<Visibility>
+        			<Parameter>
+        				<Code>
+        			      		(A:LIGHT TAXI ON, number) 1 ==
+        				</Code>
+        			</Parameter>
+        		</Visibility>
+        	</Component>
+        	<Component ID="STROBE_LIGHT_BLENDER" Node="STROBE_LIGHT_PARENT">
+        		<Visibility>
+        			<Parameter>
+        				<Code>
+        			      		(A:LIGHT STROBE ON, number) 1 ==
+        				</Code>
+        			</Parameter>
+        		</Visibility>
+        	</Component>
+        	<Component ID="PANEL_LIGHT_BLENDER" Node="PANEL_LIGHT_PARENT">
+        		<Visibility>
+        			<Parameter>
+        				<Code>
+        			      		(A:LIGHT PANEL ON, number) 1 ==
+        				</Code>
+        			</Parameter>
+        		</Visibility>
+        	</Component>
+<!-- ########################################## -->		
+<!-- SWITCH TEMPLATE FOR ANY SIMVAR OR LVAR ### -->
+<!-- ########################################## -->
+        	<Component ID="HIDE_MESH_SWITCH" Node="HIDE_PILOT_SWITCH">
+			<UseTemplate Name="ASOBO_GT_Switch_Code">
+				<ANIM_NAME>Hide_Pilot</ANIM_NAME>
+				<ANIM_CODE>(L:PILOT_VIS, number) 1 == if{ 100 } els{ 0 }</ANIM_CODE>
+				<ANIMTIP_0>HIDE PILOT</ANIMTIP_0>
+				<ANIMTIP_1>SHOW PILOT</ANIMTIP_1>
+				<LEFT_SINGLE_CODE>(L:PILOT_VIS, number) 1 == if{ 0 (&gt;L:PILOT_VIS, number) } els{ 1 (&gt;L:PILOT_VIS, number) }</LEFT_SINGLE_CODE>
+			</UseTemplate>
+		</Component>
+<!-- ########################################## -->		
+<!-- VISIBILITY HIDING A MESH WITH A CLICK##### -->
+<!-- MUST USE LVAR SWITCH TEMPLATE FOR CLICK### -->
+<!-- PLACE SWITCH CODING IN INTERIOR XML ###### -->
+<!-- ########################################## -->		
+        	<Component ID="HIDE_MESH" Node="PILOT_0">
+        		<Visibility>
+        			<Parameter>
+        				<Code>
+        			      		(L:PILOT_VIS, number) 0 ==
+        				</Code>
+        			</Parameter>
+        		</Visibility>
+        	</Component>
+	</Behaviors>
+<!-- ########################################## -->
+<!-- START OF CUSTOM CODING COMMON CODES ##### --->
+<!-- ########################################## -->
+
+<!-- ########################################## -->
+<!-- END OF CUSTOM CODING/COMMON CODES ######## -->
+<!-- ########################################## -->
+</ModelInfo>

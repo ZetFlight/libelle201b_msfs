@@ -1,0 +1,100 @@
+<!-- LOD #################################### -->
+<ModelInfo>
+	<LODS>
+		<LOD minSize="0" ModelFile="Aircraft_Ext_LOD00.gltf"/>
+	</LODS>
+		
+<!--INCLUDED BEHAIVORS ###################### -->
+	<Behaviors>
+		<!-- ########################################## -->
+		<Include ModelBehaviorFile="Asobo\Common.xml"/>
+		<Include ModelBehaviorFile="Asobo\Exterior.xml"/>
+        	<Include ModelBehaviorFile="Asobo\Generic\FX.xml"/>
+		<!-- ########################################## -->
+
+<!-- ########################################## -->		
+<!-- CONTROL SURFACES PROPELLER ANIMATION ##### -->
+<!-- ALL PROP PARTS USE prop_anim NLA Name##### -->
+<!-- ########################################## -->
+		<Component ID="HANDLING">
+			<UseTemplate Name="ASOBO_HANDLING_Elevator_Template">
+				<ANIM_NAME>Elevator_PCT</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Aileron_Template">
+				<ANIM_NAME_LEFT>Aileron_L_PCT</ANIM_NAME_LEFT>
+				<ANIM_NAME_RIGHT>Aileron_R_PCT</ANIM_NAME_RIGHT>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Rudder_Template">
+				<ANIM_NAME>Rudder_PCT</ANIM_NAME>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Flaps_Template">
+				<ANIM_NAME_LEFT>Flaps_L_PCT</ANIM_NAME_LEFT>
+				<ANIM_NAME_RIGHT>Flaps_R_PCT</ANIM_NAME_RIGHT>
+			</UseTemplate>
+			<UseTemplate Name="ASOBO_HANDLING_Spoilers_Template">
+				<ANIM_NAME_LEFT>Spoiler_L_PCT</ANIM_NAME_LEFT>
+				<ANIM_NAME_RIGHT>Spoiler_R_PCT</ANIM_NAME_RIGHT>
+			</UseTemplate>
+		</Component>
+		<Component ID="ENGINE">
+			<UseTemplate Name="ASOBO_ENGINE_Propeller_Template">
+				<ID>1</ID>
+				<ANIM_NAME>Prop_Anim</ANIM_NAME>
+				<STILL_NODE_ID>PROP_STILL</STILL_NODE_ID>
+				<SLOW_NODE_ID>PROP_SLOW</SLOW_NODE_ID>
+				<PROP_BLURRED_NODE_ID>PROP_BLUR</PROP_BLURRED_NODE_ID>
+				<PROP_SIDE_BLURRED_NODE_ID>PROP_SIDE</PROP_SIDE_BLURRED_NODE_ID>
+				<BLADE_COUNT>2</BLADE_COUNT>
+				<USE_BLADE_ROTATION>True</USE_BLADE_ROTATION>
+			</UseTemplate>
+		</Component>
+<!-- ########################################## -->		
+<!-- LANDING GEAR TIRE ANIMATIONS EFFECTS ##### -->
+<!-- ########################################## -->			
+        	<Component ID="GEARS">
+            		<UseTemplate Name="ASOBO_GEAR_Left_Template">
+                		<ANIM_NAME>Gear_Left</ANIM_NAME>
+           		</UseTemplate>
+            		<UseTemplate Name="ASOBO_GEAR_Right_Template">
+                		<ANIM_NAME>Gear_Right</ANIM_NAME>
+           		</UseTemplate>
+            		<UseTemplate Name="ASOBO_GEAR_Center_Template">
+                		<ANIM_NAME>Gear_Center</ANIM_NAME>
+            		</UseTemplate>
+            		<UseTemplate Name="ASOBO_GEAR_Back_Template">
+                		<ANIM_NAME>Gear_Back</ANIM_NAME>
+            		</UseTemplate>
+            		<UseTemplate Name="ASOBO_GEAR_Left_Tire_Template">
+                		<ANIM_NAME>Tire_L_Anim</ANIM_NAME>
+                		<NODE_ID_STILL>TIRE_LEFT_STILL</NODE_ID_STILL>
+                		<NODE_ID_BLURRED>TIRE_LEFT_BLUR</NODE_ID_BLURRED>
+            		</UseTemplate>
+            		<UseTemplate Name="ASOBO_GEAR_Right_Tire_Template">
+                		<ANIM_NAME>Tire_R_Anim</ANIM_NAME>
+                		<NODE_ID_STILL>TIRE_RIGHT_STILL</NODE_ID_STILL>
+                		<NODE_ID_BLURRED>TIRE_RIGHT_BLUR</NODE_ID_BLURRED>
+            		</UseTemplate>
+            		<UseTemplate Name="ASOBO_GEAR_Back_Tire_Template">
+                		<ANIM_NAME>Tire_B_Anim</ANIM_NAME>
+                		<NODE_ID_STILL>TIRE_BACK_STILL</NODE_ID_STILL>
+                		<NODE_ID_BLURRED>TIRE_BACK_BLUR</NODE_ID_BLURRED>
+            		</UseTemplate>
+            		<UseTemplate Name="ASOBO_GEAR_Center_Tire_Template">
+                		<ANIM_NAME>Tire_C_Anim</ANIM_NAME>
+                		<NODE_ID_STILL>TIRE_CENTER_STILL</NODE_ID_STILL>
+                		<NODE_ID_BLURRED>TIRE_CENTER_BLUR</NODE_ID_BLURRED>
+            		</UseTemplate>
+        	</Component>
+
+		<Component ID="LANDING_FX">
+			<UseTemplate Name="ASOBO_LANDING_FX"/>
+		</Component>
+	</Behaviors>
+<!-- ########################################## -->
+<!-- START OF CUSTOM CODING COMMON CODES ##### --->
+<!-- ########################################## -->
+
+<!-- ########################################## -->
+<!-- END OF CUSTOM CODING COMMON CODES ####### --->
+<!-- ########################################## -->
+</ModelInfo>

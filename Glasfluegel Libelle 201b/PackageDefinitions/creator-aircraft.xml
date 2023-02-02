@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AssetPackage ReleaseNotes="PackageDefinitions\creator-aircraft\ReleaseNotes.xml" Version="1.0.4">
+	<ItemSettings>
+		<ContentType>AIRCRAFT</ContentType>
+		<Title>Type</Title>
+		<Manufacturer>Manufacturer</Manufacturer>
+		<Creator>Creator</Creator>
+	</ItemSettings>
+	<Flags>
+		<VisibleInStore>false</VisibleInStore>
+		<CanBeReferenced>true</CanBeReferenced>
+	</Flags>
+	<AssetGroups>
+		<AssetGroup Name="ContentInfo">
+			<Type>ContentInfo</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageDefinitions\creator-aircraft\ContentInfo\</AssetDir>
+			<OutputDir>ContentInfo\creator-aircraft\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="Effects">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\Effects\</AssetDir>
+			<OutputDir>Effects\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="Manual_PDF">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\Manual_PDF\</AssetDir>
+			<OutputDir>Manual_PDF\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="VisualEffectsLibs">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\VisualEffectsLibs\</AssetDir>
+			<OutputDir>VisualEffectsLibs\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="creator-aircraft">
+			<Type>SimObject</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\SimObjects\Airplanes\creator-aircraft-varient\</AssetDir>
+			<OutputDir>SimObjects\Airplanes\creator-aircraft-varient\</OutputDir>
+		</AssetGroup>
+		<AssetGroup Name="html_ui">
+			<Type>Copy</Type>
+			<Flags>
+				<FSXCompatibility>false</FSXCompatibility>
+			</Flags>
+			<AssetDir>PackageSources\html_ui\</AssetDir>
+			<OutputDir>html_ui\</OutputDir>
+		</AssetGroup>
+	</AssetGroups>
+</AssetPackage>
+

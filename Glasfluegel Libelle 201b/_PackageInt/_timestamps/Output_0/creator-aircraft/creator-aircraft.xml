@@ -1,0 +1,35 @@
+<Timestamps>
+	<Entry Path="aircraft.cfg" Timestamp="13282636851"/>
+	<Entry Path="model\model.CFG" Timestamp="13282545986"/>
+	<Entry Path="sound\Asobo_Icon.PC.PCK" Timestamp="13281774431"/>
+	<Entry Path="texture.BASE\FS2_LOGO.PNG" Timestamp="13282634898"/>
+	<Entry Path="flight_model.cfg" Timestamp="13282636849"/>
+	<Entry Path="engines.cfg" Timestamp="13282636850"/>
+	<Entry Path="model\AIRCRAFT_EXT.xml" Timestamp="13282637689"/>
+	<Entry Path="Climb.flt" Timestamp="13257478773"/>
+	<Entry Path="model\Aircraft_Int_LOD00.gltf" Timestamp="13282634898"/>
+	<Entry Path="model\AIRCRAFT_INT.xml" Timestamp="13282635130"/>
+	<Entry Path="gameplay.cfg" Timestamp="13282636851"/>
+	<Entry Path="sound\sound.xml" Timestamp="13281774431"/>
+	<Entry Path="model\Aircraft_Int_LOD00.bin" Timestamp="13282634898"/>
+	<Entry Path="ai.cfg" Timestamp="13282636851"/>
+	<Entry Path="Final.flt" Timestamp="13257478773"/>
+	<Entry Path="texture.BASE\thumbnail.JPG" Timestamp="13282553306"/>
+	<Entry Path="apron.flt" Timestamp="13257478773"/>
+	<Entry Path="Cruise.flt" Timestamp="13257478773"/>
+	<Entry Path="soundai\Asobo_Icon_AI.PC.PCK" Timestamp="13281774431"/>
+	<Entry Path="runway.FLT" Timestamp="13257478773"/>
+	<Entry Path="panel\panel.xml" Timestamp="13282629653"/>
+	<Entry Path="cameras.cfg" Timestamp="13282636848"/>
+	<Entry Path="model\Aircraft_Ext_LOD00.bin" Timestamp="13282636377"/>
+	<Entry Path="cockpit.cfg" Timestamp="13282636851"/>
+	<Entry Path="panel\panel.cfg" Timestamp="13282635021"/>
+	<Entry Path="taxi.flt" Timestamp="13257478773"/>
+	<Entry Path="Approach.flt" Timestamp="13257478773"/>
+	<Entry Path="hangar.flt" Timestamp="13257478773"/>
+	<Entry Path="texture.BASE\thumbnail_small.JPG" Timestamp="13282553339"/>
+	<Entry Path="model\Aircraft_Ext_LOD00.gltf" Timestamp="13282636377"/>
+	<Entry Path="systems.cfg" Timestamp="13282636850"/>
+	<Entry Path="soundai\soundai.xml" Timestamp="13281774431"/>
+</Timestamps>
+

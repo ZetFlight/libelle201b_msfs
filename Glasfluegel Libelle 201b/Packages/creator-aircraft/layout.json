@@ -1,0 +1,184 @@
+{
+  "content": [
+    {
+      "path": "ContentInfo/creator-aircraft/Thumbnail.jpg",
+      "size": 17091,
+      "date": 132826161736233639
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/ai.cfg",
+      "size": 1485,
+      "date": 132826368512490184
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/aircraft.cfg",
+      "size": 3048,
+      "date": 132826368513238190
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/Approach.flt",
+      "size": 2678,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/apron.flt",
+      "size": 2594,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/cameras.cfg",
+      "size": 24493,
+      "date": 132826368480076429
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/Climb.flt",
+      "size": 2901,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/cockpit.cfg",
+      "size": 5540,
+      "date": 132826368512170818
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/Cruise.flt",
+      "size": 2678,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/engines.cfg",
+      "size": 5847,
+      "date": 132826368500044341
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/Final.flt",
+      "size": 2677,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/flight_model.cfg",
+      "size": 20458,
+      "date": 132826368497660932
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/gameplay.cfg",
+      "size": 1108,
+      "date": 132826368512200958
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/hangar.flt",
+      "size": 2594,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/model/AIRCRAFT_EXT.xml",
+      "size": 4383,
+      "date": 132826376897483328
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/model/Aircraft_Ext_LOD00.bin",
+      "size": 172056,
+      "date": 132826364234439503
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/model/Aircraft_Ext_LOD00.gltf",
+      "size": 49472,
+      "date": 132826364234449696
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/model/AIRCRAFT_INT.xml",
+      "size": 7192,
+      "date": 132826351304013881
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/model/Aircraft_Int_LOD00.bin",
+      "size": 310444,
+      "date": 132826364239386561
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/model/Aircraft_Int_LOD00.gltf",
+      "size": 43494,
+      "date": 132826364239406501
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/model/model.CFG",
+      "size": 867,
+      "date": 132825459861937387
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/panel/panel.cfg",
+      "size": 165,
+      "date": 132826350214371620
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/panel/panel.xml",
+      "size": 4045,
+      "date": 132826296536130102
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/runway.FLT",
+      "size": 2519,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/sound/Asobo_Icon.PC.PCK",
+      "size": 87198967,
+      "date": 132817744313208050
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/sound/sound.xml",
+      "size": 22505,
+      "date": 132817744313228024
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/soundai/Asobo_Icon_AI.PC.PCK",
+      "size": 11478242,
+      "date": 132817744314045980
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/soundai/soundai.xml",
+      "size": 2744,
+      "date": 132817744314065766
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/systems.cfg",
+      "size": 9894,
+      "date": 132826368509790313
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/taxi.flt",
+      "size": 2520,
+      "date": 132574787730000000
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/texture.BASE/FS2_LOGO.PNG.DDS",
+      "size": 3167456,
+      "date": 132826364238429126
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/texture.BASE/FS2_LOGO.PNG.DDS.json",
+      "size": 119,
+      "date": 132826364238379259
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/texture.BASE/ORANGE.PNG.DDS",
+      "size": 6992,
+      "date": 132826353794733983
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/texture.BASE/ORANGE.PNG.DDS.json",
+      "size": 102,
+      "date": 132826353794724009
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/texture.BASE/thumbnail.JPG",
+      "size": 73979,
+      "date": 132825533067786944
+    },
+    {
+      "path": "SimObjects/Airplanes/creator-aircraft-varient/texture.BASE/thumbnail_small.JPG",
+      "size": 22695,
+      "date": 132825533390104323
+    }
+  ]
+}

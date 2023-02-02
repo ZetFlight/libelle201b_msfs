@@ -1,0 +1,28 @@
+<!---------------------------------------------->		
+<!-- COMMON USED TEMPLATE CODE MODIFIERS #### -->
+<!---------------------------------------------->
+
+<!--	<ID></ID>						-->
+<!--	<NODE_ID></NODE_ID>					-->
+<!--	<ANIM_NAME></ANIM_NAME>					-->
+<!--	<ANIMTIP_0></ANIMTIP_0>					-->
+<!--	<WWISE_EVENT_1></WWISE_EVENT_1>				-->
+<!--	<WWISE_EVENT_2></WWISE_EVENT_2>				-->
+<!--	<HelpID></HelpID>					-->
+<!--	<TooltipID></TooltipID>					-->
+<!--	<ANIM_LAG></ANIM_LAG>					-->
+<!--	<Code></Code>						-->
+<!--	<Cursor></Cursor>					-->
+<!--	<INCREMENT></INCREMENT>					-->
+<!--	<LEFT_SINGLE_CODE></LEFT_SINGLE_CODE>			-->
+<!--	<WHEEL_DOWN_CODE></WHEEL_DOWN_CODE>			-->
+<!--	<WHEEL_UP_CODE></WHEEL_UP_CODE>				-->
+<!--	<MOUSE_WHEEL_INCREMENT></MOUSE_WHEEL_INCREMENT>		-->
+<!--	<INTERACTION_AXIS></INTERACTION_AXIS>			-->
+<!--	<STEPS_NUMBER></STEPS_NUMBER>				-->
+<!--	<UP_CODE></UP_CODE>					-->
+<!--	<DOWN_CODE></DOWN_CODE>					-->
+<!--	<LEFT_CODE></LEFT_CODE>					-->
+<!--	<RIGHT_CODE></RIGHT_CODE>				-->
+<!--	<FREQUENCY></FREQUENCY>					-->
+<!--	<UPDATE_CODE>						-->
